@@ -1,10 +1,12 @@
 {
   "name": "actions-test",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/chrishawes/actions-test/issues"
   },
-  "homepage": "https://github.com/chrishawes/actions-test#readme"
+  "homepage": "https://github.com/chrishawes/actions-test#readme",
+  "workspaces": [
+    "./common/*"
+  ],
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.7"
+  }
 }

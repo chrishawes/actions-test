@@ -1,0 +1,17 @@
+{
+  "name": "@common/hello-world",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "exports": "./index.js",
+  "private": true,
+  "scripts": {
+    "test": "node --experimental-vm-modules ../../node_modules/.bin/jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
