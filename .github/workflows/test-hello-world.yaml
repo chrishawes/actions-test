@@ -21,6 +21,7 @@ jobs:
     - uses: actions/setup-node@v2-beta
       with:
         node-version: '15.3.x'
+    - run: npm install -g npm@7
     - run: npm install
     - run: cd common/hello-world
     - run: npm test
